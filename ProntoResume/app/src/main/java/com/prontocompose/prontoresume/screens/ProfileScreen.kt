@@ -18,7 +18,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 @Composable
-fun ProfileScreen(innerPadding: PaddingValues) {
+fun ProfileScreen() {
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -39,6 +39,5 @@ fun ProfileScreen(innerPadding: PaddingValues) {
 @Preview
 @Composable
 fun PreviewProfileScreen() {
-    val paddingValue: PaddingValues = PaddingValues(4.dp)
-    ProfileScreen(paddingValue)
+    ProfileScreen()
 }
