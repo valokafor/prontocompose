@@ -8,9 +8,7 @@
     <string name="total_rate">(%d)</string>
     <string name="sample_name">Val Okafor</string>
     <string name="sample_title">Senior Android Engineer</string>
-    <string name="sample_description">"Senior software engineer with 10+ years of experience in the full
-        software development cycle. Highly adept in leading engineer teams to achieve software development
-        upgrades and increase business efficiency while delivering world-class solutions to clients."</string>
+    <string name="sample_description">"Senior software engineer with 10+ years of experience in the full software development cycle. Highly adept in leading engineer teams to achieve software development upgrades and increase business efficiency while delivering world-class solutions to clients."</string>
     <string name="skill_summary">Skill Summary</string>
     <string name="skill_highlight">Skill Highlight</string>
     <string name="language">Language:</string>
