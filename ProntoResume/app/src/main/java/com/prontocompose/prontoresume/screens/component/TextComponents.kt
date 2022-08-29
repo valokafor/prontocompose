@@ -79,3 +79,16 @@ fun LanguageText(modifier: Modifier, text: String) {
         fontFamily = poppins
     )
 }
+
+@Composable
+fun TextDate(modifier: Modifier, text: String) {
+    Text(
+        modifier = modifier,
+        text = text,
+        color = Colors.Secondary_5,
+        fontSize = 11.sp,
+        fontWeight = FontWeight.SemiBold,
+        maxLines = 1,
+        fontFamily = poppins
+    )
+}
