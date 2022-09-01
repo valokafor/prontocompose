@@ -12,6 +12,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.prontocompose.prontoresume.R
@@ -19,9 +20,8 @@ import com.prontocompose.prontoresume.model.Project
 import com.prontocompose.prontoresume.ui.theme.Colors
 
 @Composable
-fun ProjectItem(project: Project, onDownload: () -> Unit) {
+fun ProjectItem(project: Project, onDownload: (String) -> Unit) {
     var favorite by remember { mutableStateOf(false) }
-
 
 
     Column(
@@ -70,7 +70,7 @@ fun ProjectItem(project: Project, onDownload: () -> Unit) {
                 modifier = Modifier
                     .padding(top = 10.dp),
                 text = stringResource(R.string.download),
-                onClick = onDownload
+                onClick = {onDownload(project.downloadUrl)}
             )
         }
     }

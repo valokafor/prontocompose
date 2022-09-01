@@ -10,7 +10,8 @@ data class Project(
     val name: String,
     val description: String,
     val appLogo: ImageVector,
-    val favorite: Boolean = false
+    val favorite: Boolean = false,
+    val downloadUrl: String = ""
 )
 
 fun sampleProjects() = listOf(

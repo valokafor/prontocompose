@@ -10,6 +10,12 @@ enum class Destinations(val route: String) {
     Work_History("work_history")
 }
 
+sealed class ClickEvents {
+    class TextMessageEvent(smsNumber: String)
+    class PhoneCallEvent(phoneNumber: String)
+    class DownloadEvent(downloadUrl: String)
+}
+
 enum class ProntoResumeTabs(
     @StringRes val title: Int,
     @DrawableRes val icon: Int,
